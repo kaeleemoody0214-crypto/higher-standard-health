@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #f8f7f5;
+  --muted: #b7b7b7;
+  --panel: rgba(17, 17, 17, 0.8);
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --accent: #ff3131;
+  --accent-dark: #aa1010;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 49, 49, 0.26), transparent 22%),
+    radial-gradient(circle at top right, rgba(143, 16, 16, 0.22), transparent 20%),
+    linear-gradient(180deg, #1a0909 0%, #0a0707 42%, #030303 100%);
+  color: var(--foreground);
+  font-family: "Rajdhani", "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: rgba(255, 49, 49, 0.35);
+  color: #fff;
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+}
+
+.clip-diagonal-reverse {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.texture-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.panel-sheen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.09), transparent 28%);
+  pointer-events: none;
+}
+
+.section-slash::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(135deg, rgba(255, 49, 49, 0.28), transparent 72%);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  pointer-events: none;
+}
