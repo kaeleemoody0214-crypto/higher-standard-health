@@ -88,7 +88,7 @@ export function QuizFlow() {
         body: JSON.stringify({
           ...answers,
           ...utmParams,
-          website: honeypot
+          referralCode: honeypot
         })
       });
 
@@ -123,7 +123,7 @@ export function QuizFlow() {
               <p className="text-sm font-semibold uppercase tracking-[0.45em] text-ember-300">
                 {variant.heroKicker}
               </p>
-              <h1 className="max-w-3xl font-display text-[3.8rem] uppercase leading-[0.85] tracking-[0.03em] text-white sm:text-[5.5rem] lg:text-[7rem]">
+              <h1 className="max-w-3xl font-display text-[3rem] uppercase leading-[0.88] tracking-[0.03em] text-white sm:text-[5.5rem] lg:text-[7rem]">
                 Raise The Standard. Transform The Body.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-white/72 sm:text-xl">
@@ -172,14 +172,15 @@ export function QuizFlow() {
                 ) : (
                   <form className="space-y-5" onSubmit={handleSubmit}>
                     <div className="hidden">
-                      <label htmlFor="website">Website</label>
+                      <label htmlFor="referral-code">Referral Code</label>
                       <input
-                        id="website"
-                        name="website"
+                        id="referral-code"
+                        name="referral_code"
                         value={honeypot}
                         onChange={(event) => setHoneypot(event.target.value)}
-                        autoComplete="off"
+                        autoComplete="new-password"
                         tabIndex={-1}
+                        aria-hidden="true"
                       />
                     </div>
                     <div className="grid gap-4 md:grid-cols-2">

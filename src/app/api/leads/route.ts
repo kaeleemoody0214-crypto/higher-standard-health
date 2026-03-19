@@ -26,8 +26,13 @@ export async function POST(request: Request) {
 
     const data = parsed.data;
 
-    if (data.website) {
-      return NextResponse.json({ success: true });
+    if (data.referralCode) {
+      return NextResponse.json(
+        {
+          error: "We couldn't process that submission. Please try again."
+        },
+        { status: 400 }
+      );
     }
 
     if (!resendApiKey) {

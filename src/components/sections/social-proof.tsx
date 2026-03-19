@@ -12,9 +12,6 @@ export function SocialProofSection() {
           <h2 className="font-display text-4xl uppercase leading-none tracking-[0.04em] text-white sm:text-5xl">
             Built For Visible Results
           </h2>
-          <p className="max-w-2xl text-lg text-white/68">
-            Social proof, transformation energy, and real momentum baked directly into the funnel.
-          </p>
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-2">

@@ -16,7 +16,7 @@ export const leadSchema = z.object({
   utmCampaign: z.string().max(120).optional().or(z.literal("")),
   utmContent: z.string().max(120).optional().or(z.literal("")),
   utmTerm: z.string().max(120).optional().or(z.literal("")),
-  website: z.string().max(0).optional().or(z.literal(""))
+  referralCode: z.string().max(0).optional().or(z.literal(""))
 });
 
 export type LeadPayload = z.infer<typeof leadSchema>;
