@@ -27,6 +27,15 @@ export type Option = {
   detail?: string;
 };
 
+export type VideoConfig = {
+  eyebrow: string;
+  headline: string;
+  description: string;
+  mp4Path?: string;
+  embedUrl?: string;
+  posterPath?: string;
+};
+
 export type StepConfig = {
   id: Exclude<QuizField, "fullName" | "email" | "phone" | "occupation" | "age"> | "contact";
   headline: string;
@@ -79,11 +88,6 @@ export const quizSteps: StepConfig[] = [
         value: "improve-confidence-lifestyle",
         label: "Improve Confidence / Lifestyle",
         detail: "Look sharper, feel stronger, and build habits that stick."
-      },
-      {
-        value: "bodybuilding-competition",
-        label: "Compete In Bodybuilding",
-        detail: "Train with structure, precision, and a physique-focused game plan."
       }
     ]
   },
@@ -214,6 +218,15 @@ export const healthFoundation = {
     "Real transformation is not just training harder. Higher Standard Health focuses on healing clients from the inside out and creating a healthy, optimal foundation that supports your physique goals, recovery, hormones, energy, and long-term performance.",
   details:
     "A lot of people have underlying issues that keep them from reaching their full potential. Caden goes into in-depth blood work reading to identify what is holding you back, then helps build the right strategy so your body is optimized to meet your goals."
+};
+
+export const featureVideo: VideoConfig = {
+  eyebrow: "See The Standard",
+  headline: "Watch How Higher Standard Health Coaches Real Transformation.",
+  description:
+    "Drop in your main brand video here to build trust fast, show the coaching style, and give paid traffic a stronger reason to book.",
+  mp4Path: "/videos/hsh-feature.mp4",
+  posterPath: "/images/coach/caden-coach.jpg"
 };
 
 export const aboutCoach = {
