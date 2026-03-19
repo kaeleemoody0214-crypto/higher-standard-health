@@ -224,9 +224,9 @@ export const featureVideo: VideoConfig = {
   eyebrow: "See The Standard",
   headline: "Watch How Higher Standard Health Coaches Real Transformation.",
   description:
-    "Drop in your main brand video here to build trust fast, show the coaching style, and give paid traffic a stronger reason to book.",
+    "A closer look at the coaching style, discipline, and standard behind the results.",
   mp4Path: "/videos/hsh-feature.mp4",
-  posterPath: "/images/coach/caden-coach.jpg"
+  posterPath: "/videos/hsh-feature-cover.jpg"
 };
 
 export const aboutCoach = {
