@@ -127,8 +127,7 @@ export const quizSteps: StepConfig[] = [
   },
   {
     id: "budget",
-    headline:
-      "Is creating real, lasting change, and achieving your goals worth spending $60-$80 a week to you?",
+    headline: "Are you prepared to invest in coaching if it’s the right fit?",
     type: "options",
     field: "budget",
     options: [

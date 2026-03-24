@@ -4,7 +4,8 @@ import { leadSchema } from "@/lib/validation";
 
 const recipients = [
   "cadenwesleythompson@gmail.com",
-  "kaeleemoody0214@gmail.com"
+  "kaeleemoody0214@gmail.com",
+  "ctfit1999@gmail.com"
 ];
 
 const resendApiKey = process.env.RESEND_API_KEY;
@@ -53,7 +54,7 @@ export async function POST(request: Request) {
       `Experience: ${data.experience}`,
       `Biggest Struggle: ${data.struggle}`,
       `Commitment Level: ${data.commitment}`,
-      `Investment Fit ($60-$80/week): ${data.budget}`,
+      `Prepared To Invest If It's The Right Fit: ${data.budget}`,
       "",
       `Full Name: ${data.fullName}`,
       `Email: ${data.email}`,
@@ -88,7 +89,7 @@ export async function POST(request: Request) {
               <p><strong>Experience:</strong> ${escapeHtml(data.experience)}</p>
               <p><strong>Biggest Struggle:</strong> ${escapeHtml(data.struggle)}</p>
               <p><strong>Commitment Level:</strong> ${escapeHtml(data.commitment)}</p>
-              <p><strong>Investment Fit ($60-$80/week):</strong> ${escapeHtml(data.budget)}</p>
+              <p><strong>Prepared To Invest If It's The Right Fit:</strong> ${escapeHtml(data.budget)}</p>
               <hr style="border:none;border-top:1px solid rgba(255,255,255,0.12);margin:24px 0;" />
               <h2 style="margin:0 0 12px;font-size:18px;color:#ff6b6b;text-transform:uppercase;">Contact Details</h2>
               <p><strong>Full Name:</strong> ${escapeHtml(data.fullName)}</p>
