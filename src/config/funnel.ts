@@ -207,6 +207,41 @@ export const proofCards = [
     title: "Garrett",
     stats: "12 weeks",
     caption: "Went through a 12 week body recomp while getting stronger and hitting PRs in powerlifting competition prep."
+  },
+  {
+    title: "Terezz",
+    stats: "30 days",
+    caption: "Lost 30 pounds in 30 days and got into elite shape for his wedding."
+  },
+  {
+    title: "Ty",
+    stats: "3.5 months",
+    caption: "Added 10 pounds of lean muscle in 3.5 months."
+  },
+  {
+    title: "Manny",
+    stats: "7 weeks",
+    caption: "Fixed his bloating, constipation and acid reflux in 7 weeks."
+  },
+  {
+    title: "Stephan",
+    stats: "6 months",
+    caption: "Lost 30 pounds and 5.5 inches off his waist in 6 months."
+  },
+  {
+    title: "Joe",
+    stats: "4 months",
+    caption: "Broke free of his food addiction, fixed his sleep, energy and performance, and got leaner while hitting PRs, all while eating more food than ever."
+  },
+  {
+    title: "Tod",
+    stats: "10 months",
+    caption: "Got leaner than ever, built muscle and fixed his shoulder injury."
+  },
+  {
+    title: "Damon",
+    stats: "33 lbs down",
+    caption: "Went from 232 to 199 pounds and from a 39\" to a 33.9\" waist. Energy, sleep and confidence went from a 2/10 to a 9/10."
   }
 ];
 
